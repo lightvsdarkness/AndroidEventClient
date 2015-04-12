@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UserClientExchange" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://www.project-ai.org/EventService/UserClient.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://www.project-ai.org/EventService/UserClient.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EventService.DTO" />
+      <xsd:import schemaLocation="http://www.project-ai.org/EventService/UserClient.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://www.project-ai.org/EventService/UserClient.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUserAccess_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_Login_ESExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/EventService.DTO" name="detail" element="q1:ESException" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_Logout_InputMessage">
+    <wsdl:part name="parameters" element="tns:Logout" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_Logout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_Logout_ESExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/EventService.DTO" name="detail" element="q2:ESException" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetCategoriesListForCurrentAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoriesListForCurrentAccount" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetCategoriesListForCurrentAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoriesListForCurrentAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetCategoriesListForCurrentAccount_ESExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/EventService.DTO" name="detail" element="q3:ESException" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_RegisterNewAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterNewAccount" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_RegisterNewAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterNewAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_RegisterNewAccount_ESExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/EventService.DTO" name="detail" element="q4:ESException" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetEventsList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventsList" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetEventsList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetEventsList_ESExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/EventService.DTO" name="detail" element="q5:ESException" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetFilteredEventsList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilteredEventsList" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetFilteredEventsList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilteredEventsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetFilteredEventsList_ESExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/EventService.DTO" name="detail" element="q6:ESException" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetEventFullDescription_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventFullDescription" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetEventFullDescription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventFullDescriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetEventFullDescription_ESExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/EventService.DTO" name="detail" element="q7:ESException" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetPhoto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhoto" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetPhoto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhotoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetPhoto_ESExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/EventService.DTO" name="detail" element="q8:ESException" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetFiltersList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFiltersList" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetFiltersList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFiltersListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetFiltersList_ESExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/EventService.DTO" name="detail" element="q9:ESException" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetFilter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilter" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetFilter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_GetFilter_ESExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/EventService.DTO" name="detail" element="q10:ESException" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_CreateFilter_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateFilter" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_CreateFilter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateFilterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_CreateFilter_ESExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/EventService.DTO" name="detail" element="q11:ESException" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_DeleteFilter_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFilter" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_DeleteFilter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFilterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_DeleteFilter_ESExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/EventService.DTO" name="detail" element="q12:ESException" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_UpdateFilterLastEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFilterLastEvent" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_UpdateFilterLastEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFilterLastEventResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserAccess_UpdateFilterLastEvent_ESExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.datacontract.org/2004/07/EventService.DTO" name="detail" element="q13:ESException" />
+  </wsdl:message>
+  <wsdl:portType name="IUserAccess">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRemoteAccess/Login" message="tns:IUserAccess_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRemoteAccess/LoginResponse" message="tns:IUserAccess_Login_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IRemoteAccess/LoginESExceptionFault" name="ESExceptionFault" message="tns:IUserAccess_Login_ESExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRemoteAccess/Logout" message="tns:IUserAccess_Logout_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRemoteAccess/LogoutResponse" message="tns:IUserAccess_Logout_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IRemoteAccess/LogoutESExceptionFault" name="ESExceptionFault" message="tns:IUserAccess_Logout_ESExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoriesListForCurrentAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserAccess/GetCategoriesListForCurrentAccount" message="tns:IUserAccess_GetCategoriesListForCurrentAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserAccess/GetCategoriesListForCurrentAccountResponse" message="tns:IUserAccess_GetCategoriesListForCurrentAccount_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserAccess/GetCategoriesListForCurrentAccountESExceptionFault" name="ESExceptionFault" message="tns:IUserAccess_GetCategoriesListForCurrentAccount_ESExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterNewAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserAccess/RegisterNewAccount" message="tns:IUserAccess_RegisterNewAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserAccess/RegisterNewAccountResponse" message="tns:IUserAccess_RegisterNewAccount_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserAccess/RegisterNewAccountESExceptionFault" name="ESExceptionFault" message="tns:IUserAccess_RegisterNewAccount_ESExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEventsList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserAccess/GetEventsList" message="tns:IUserAccess_GetEventsList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserAccess/GetEventsListResponse" message="tns:IUserAccess_GetEventsList_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserAccess/GetEventsListESExceptionFault" name="ESExceptionFault" message="tns:IUserAccess_GetEventsList_ESExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFilteredEventsList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserAccess/GetFilteredEventsList" message="tns:IUserAccess_GetFilteredEventsList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserAccess/GetFilteredEventsListResponse" message="tns:IUserAccess_GetFilteredEventsList_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserAccess/GetFilteredEventsListESExceptionFault" name="ESExceptionFault" message="tns:IUserAccess_GetFilteredEventsList_ESExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEventFullDescription">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserAccess/GetEventFullDescription" message="tns:IUserAccess_GetEventFullDescription_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserAccess/GetEventFullDescriptionResponse" message="tns:IUserAccess_GetEventFullDescription_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserAccess/GetEventFullDescriptionESExceptionFault" name="ESExceptionFault" message="tns:IUserAccess_GetEventFullDescription_ESExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserAccess/GetPhoto" message="tns:IUserAccess_GetPhoto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserAccess/GetPhotoResponse" message="tns:IUserAccess_GetPhoto_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserAccess/GetPhotoESExceptionFault" name="ESExceptionFault" message="tns:IUserAccess_GetPhoto_ESExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFiltersList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserAccess/GetFiltersList" message="tns:IUserAccess_GetFiltersList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserAccess/GetFiltersListResponse" message="tns:IUserAccess_GetFiltersList_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserAccess/GetFiltersListESExceptionFault" name="ESExceptionFault" message="tns:IUserAccess_GetFiltersList_ESExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFilter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserAccess/GetFilter" message="tns:IUserAccess_GetFilter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserAccess/GetFilterResponse" message="tns:IUserAccess_GetFilter_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserAccess/GetFilterESExceptionFault" name="ESExceptionFault" message="tns:IUserAccess_GetFilter_ESExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateFilter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserAccess/CreateFilter" message="tns:IUserAccess_CreateFilter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserAccess/CreateFilterResponse" message="tns:IUserAccess_CreateFilter_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserAccess/CreateFilterESExceptionFault" name="ESExceptionFault" message="tns:IUserAccess_CreateFilter_ESExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFilter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserAccess/DeleteFilter" message="tns:IUserAccess_DeleteFilter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserAccess/DeleteFilterResponse" message="tns:IUserAccess_DeleteFilter_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserAccess/DeleteFilterESExceptionFault" name="ESExceptionFault" message="tns:IUserAccess_DeleteFilter_ESExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFilterLastEvent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUserAccess/UpdateFilterLastEvent" message="tns:IUserAccess_UpdateFilterLastEvent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUserAccess/UpdateFilterLastEventResponse" message="tns:IUserAccess_UpdateFilterLastEvent_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IUserAccess/UpdateFilterLastEventESExceptionFault" name="ESExceptionFault" message="tns:IUserAccess_UpdateFilterLastEvent_ESExceptionFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IUserAccess" type="tns:IUserAccess">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IRemoteAccess/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ESExceptionFault">
+        <soap:fault use="literal" name="ESExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap:operation soapAction="http://tempuri.org/IRemoteAccess/Logout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ESExceptionFault">
+        <soap:fault use="literal" name="ESExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoriesListForCurrentAccount">
+      <soap:operation soapAction="http://tempuri.org/IUserAccess/GetCategoriesListForCurrentAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ESExceptionFault">
+        <soap:fault use="literal" name="ESExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterNewAccount">
+      <soap:operation soapAction="http://tempuri.org/IUserAccess/RegisterNewAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ESExceptionFault">
+        <soap:fault use="literal" name="ESExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetEventsList">
+      <soap:operation soapAction="http://tempuri.org/IUserAccess/GetEventsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ESExceptionFault">
+        <soap:fault use="literal" name="ESExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilteredEventsList">
+      <soap:operation soapAction="http://tempuri.org/IUserAccess/GetFilteredEventsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ESExceptionFault">
+        <soap:fault use="literal" name="ESExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetEventFullDescription">
+      <soap:operation soapAction="http://tempuri.org/IUserAccess/GetEventFullDescription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ESExceptionFault">
+        <soap:fault use="literal" name="ESExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoto">
+      <soap:operation soapAction="http://tempuri.org/IUserAccess/GetPhoto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ESExceptionFault">
+        <soap:fault use="literal" name="ESExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFiltersList">
+      <soap:operation soapAction="http://tempuri.org/IUserAccess/GetFiltersList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ESExceptionFault">
+        <soap:fault use="literal" name="ESExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilter">
+      <soap:operation soapAction="http://tempuri.org/IUserAccess/GetFilter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ESExceptionFault">
+        <soap:fault use="literal" name="ESExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateFilter">
+      <soap:operation soapAction="http://tempuri.org/IUserAccess/CreateFilter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ESExceptionFault">
+        <soap:fault use="literal" name="ESExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFilter">
+      <soap:operation soapAction="http://tempuri.org/IUserAccess/DeleteFilter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ESExceptionFault">
+        <soap:fault use="literal" name="ESExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFilterLastEvent">
+      <soap:operation soapAction="http://tempuri.org/IUserAccess/UpdateFilterLastEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ESExceptionFault">
+        <soap:fault use="literal" name="ESExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UserClientExchange">
+    <wsdl:port name="BasicHttpBinding_IUserAccess" binding="tns:BasicHttpBinding_IUserAccess">
+      <soap:address location="http://www.project-ai.org/EventService/UserClient.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

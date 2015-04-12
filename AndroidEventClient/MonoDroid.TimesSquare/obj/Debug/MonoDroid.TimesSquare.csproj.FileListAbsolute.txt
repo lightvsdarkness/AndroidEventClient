@@ -1,0 +1,40 @@
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\bin\Debug\MonoDroid.TimesSquare.dll
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\bin\Debug\MonoDroid.TimesSquare.pdb
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\bin\Debug\MonoDroid.TimesSquare.dll.mdb
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\bin\Debug\MonoDroid.TimesSquare.apk
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\bin\Debug\MonoDroid.TimesSquare-Signed.apk
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\obj\Debug\MonoDroid.TimesSquare.csprojResolveAssemblyReference.cache
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\obj\Debug\MonoDroid.TimesSquare.dll
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\obj\Debug\MonoDroid.TimesSquare.pdb
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\obj\Debug\android\bin\MonoDroid.TimesSquare.apk
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\obj\Debug\res\values\strings.xml
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\obj\Debug\res\layout\month.xml
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\obj\Debug\res\layout\week.xml
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\obj\Debug\res\color\calendar_text_selector.xml
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\obj\Debug\res\values\colors.xml
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\obj\Debug\res\values\dimens.xml
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\obj\Debug\res\values\styles.xml
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\obj\Debug\res\values\attrs.xml
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\obj\Debug\res\drawable\calendar_bg_selector.xml
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\obj\Debug\R.cs.flag
+C:\Users\Emeri\Downloads\MonoDroid.TimesSquare-master\MonoDroid.TimesSquare\obj\Debug\uploadflags.txt
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\bin\Debug\MonoDroid.TimesSquare.dll
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\bin\Debug\MonoDroid.TimesSquare.pdb
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\bin\Debug\MonoDroid.TimesSquare.dll.mdb
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\bin\Debug\MonoDroid.TimesSquare.apk
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\bin\Debug\MonoDroid.TimesSquare-Signed.apk
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Debug\MonoDroid.TimesSquare.dll
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Debug\MonoDroid.TimesSquare.pdb
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Debug\android\bin\MonoDroid.TimesSquare.apk
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Debug\res\values\strings.xml
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Debug\res\layout\month.xml
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Debug\res\layout\week.xml
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Debug\res\color\calendar_text_selector.xml
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Debug\res\values\colors.xml
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Debug\res\values\dimens.xml
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Debug\res\values\styles.xml
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Debug\res\values\attrs.xml
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Debug\res\drawable\calendar_bg_selector.xml
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Debug\R.cs.flag
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Debug\uploadflags.txt
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Debug\MonoDroid.TimesSquare.csprojResolveAssemblyReference.cache

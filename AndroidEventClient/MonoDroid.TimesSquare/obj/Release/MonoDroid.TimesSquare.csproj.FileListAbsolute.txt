@@ -1,0 +1,17 @@
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\bin\Release\MonoDroid.TimesSquare.dll
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\bin\Release\MonoDroid.TimesSquare.apk
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\bin\Release\MonoDroid.TimesSquare-Signed.apk
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Release\MonoDroid.TimesSquare.csprojResolveAssemblyReference.cache
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Release\MonoDroid.TimesSquare.dll
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Release\android\bin\MonoDroid.TimesSquare.apk
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Release\res\values\strings.xml
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Release\res\layout\month.xml
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Release\res\layout\week.xml
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Release\res\color\calendar_text_selector.xml
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Release\res\values\colors.xml
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Release\res\values\dimens.xml
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Release\res\values\styles.xml
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Release\res\values\attrs.xml
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Release\res\drawable\calendar_bg_selector.xml
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Release\R.cs.flag
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\obj\Release\uploadflags.txt

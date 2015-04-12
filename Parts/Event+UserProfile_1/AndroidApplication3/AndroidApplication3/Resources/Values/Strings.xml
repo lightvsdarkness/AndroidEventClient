@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+  <!--Russian version begins-->
+  <!--Event begins-->
+
+    <string name="UpHeader">Мероприятия</string>
+    <string name="UserProfile">Профиль пользователя</string>
+    <string name="ApplicationName">Куда сходить</string>
+
+  <!--Event ends-->
+
+  <!--UserProfile begins-->
+  <string name="FIO">ФИО</string>
+  <string name="Email">Электронная почта</string>
+  <string name="Password">Пароль</string>
+  <string name="Gender">Пол</string>
+  <string name="Group">Группа пользователей</string>
+  <string name="Faculty">Факультет</string>
+  <string name="RefreshProfile">Обновить ваши данные</string>
+
+  <!--UserProfile begins-->
+
+  <!--Russian version ends-->
+</resources>

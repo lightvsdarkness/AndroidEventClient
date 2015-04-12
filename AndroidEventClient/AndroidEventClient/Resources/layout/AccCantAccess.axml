@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:background="#FFE76F"
+        android:layout_height="fill_parent">
+        <TextView
+            android:id="@+id/YourEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:layout_marginBottom="5dip"
+            android:text="@string/YourEmail"
+            android:textSize="15dip"
+            android:layout_alignParentTop="true" />
+        <EditText
+            android:id="@+id/YourEmailText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/YourEmailHint"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:layout_marginBottom="5dip"
+            android:textSize="15dip"
+            android:layout_below="@+id/YourEmail" />
+        <TextView
+            android:id="@+id/AnswerSecretQuestionPLSMAN"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:layout_marginBottom="5dip"
+            android:text="@string/AnswerSecretQuestionPLSMAN"
+            android:textSize="15dip"
+            android:layout_below="@+id/YourEmailText" />
+        <TextView
+            android:id="@+id/SecretQuestion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:layout_marginBottom="5dip"
+            android:text="@string/SecretQuestion"
+            android:textSize="15dip"
+            android:layout_below="@+id/AnswerSecretQuestionPLSMAN" />
+        <EditText
+            android:id="@+id/MASQ"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/MASQ"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:layout_marginBottom="5dip"
+            android:textSize="15dip"
+            android:layout_below="@+id/SecretQuestion" />
+        <Button
+            android:id="@+id/AnswerSecretQuestion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/AnswerSecretQuestion"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:layout_marginTop="5dip"
+            android:layout_gravity="bottom"
+            android:textSize="20dip"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/MASQ" />
+    </RelativeLayout>
+</LinearLayout>

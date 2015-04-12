@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+  <!--Russian version begins-->
+
+  <!-- Drawer begins-->
+  <string name="DrawerOpen">Open</string>
+  <string name="DrawerClose">Close</string>
+  <string name="app_not_available">Sorry, there is no web browser available</string>
+  <string name="sliding_pane_layout_summary">This activity illustrates the use of sliding panes. The content pane may be slid to one side on narrow devices to reveal the left pane used to select content. Sliding panes can be used to fit a UI intended for wider screens in a smaller space. Tapping the Action Bar\'s Up button at the left side of the bar will navigate up in the hierarchy, represented by the left pane. If you rotate the device to landscape mode, on most devices you will see that both panes fit together side by side with no sliding necessary.</string>
+  <!-- Drawer ends-->
+
+  <!-- ActionBar begins-->
+  <string name="Search">Поиск</string>
+  <string name="Settings">Настройки</string>
+  <string name="action_websearch">Web поиск</string>
+  <string name="action_login">Авторизация</string>
+  <string name="action_filter">Фильтр</string>
+  
+  <string name="action_sort">Сортировка</string>
+  <string name="sort_alphabet">По алфавиту</string>
+  <string name="sort_date">По дате</string>
+  <string name="sort_organizer">По организатору</string>
+  <!-- ActionBar ends-->
+
+  <!-- LogIn begins-->
+  <string name="login">Авторизация</string>
+  <string name="EmailEdit">Введите Email</string>
+  <string name="PasswordEdit">Введите пароль</string>
+
+  <string name="ForgotPassword">Не можете войти?</string>
+  <string name="Register">Зарегистрироваться</string>
+  <string name="SignIn">Войти</string>
+  <string name="SimpleUse">Использовать без аккаунта</string>
+  <!-- LogIn ends-->
+
+  <!-- CantAccessAccount begins-->
+  <string name="YourEmail">Ваш электронная почта:</string>
+  <string name="YourEmailHint">ваша электронная почта</string>
+  <string name="AnswerSecretQuestionPLSMAN">Пожалуйста, ответьте на секретный вопрос:</string>
+  <string name="SecretQuestion">Секретный вопрос?</string>
+  <string name="AnswerSecretQuestion">Ответить на секретный вопрос</string>
+  <string name="MASQ">Думаю, что ответ это... Секретный ответ!</string>
+  <!-- CantAccessAccount-->
+
+  <!-- Register begins-->
+  <string name="FIOEdit">Введите своё ФИО</string>
+  <string name="RegisterAccount">Зарегистрироваться</string>
+  <string name="SuccessfulRegistration">Вы зарегистрировались. Добро пожаловать!</string>
+  <string name="EditingNotNecessary">Можете заполнить позже</string>
+  <string name="Gender_prompt">Укажите ваш пол</string>
+  <string name="Gender_chosen">Выбран пол</string>
+  <string-array name="Gender_array">
+    <item>Не указан</item>
+    <item>Мужской</item>
+    <item>Женский</item>
+  </string-array>
+  <!-- Register ends-->
+  
+  <!--Events begins-->
+  <string name="UpHeader">Основное меню</string>
+  <string name="EventsList">Мероприятия</string>
+  <string name="MySchedule">Мой график</string>
+  <string name="MyEvents">Мои события</string>
+  <string name="Filters">Фильтрация</string>
+  <string name="Preferences">Настройки</string>
+  <string name="AccountProfile">Профиль учетной записи</string>
+  <string name="UserProfile">Мой профиль</string>
+
+  <string name="Refresh">Обновить</string>
+  <string name="OrderDateTime">Упорядочить по времени</string>
+  <string name="ApplicationName">Куда сходить</string>
+
+  <!--ARRAYS begins-->
+  
+  
+  <string-array name="MenuArray">
+    <item>Мероприятия</item>
+    <item>Календарь</item>
+    <item>Мои события</item>
+    <item>Фильтрация</item>
+    <item>Профиль</item>
+  </string-array>
+
+  <!--SERVICE ARRAY. DON'T TRANSLATE. PAIRED WITH 'MenuArray' begins-->
+  <string-array name="FragmentTagMenuArray">
+    <item>eventfragment</item>
+    <item>calendarfragment</item>
+    <item>myeventsfragment</item>
+    <item>filtrationfragment</item>
+    <item>profilefragment</item>
+    <item>settingsfragment</item>
+  </string-array>
+  <!--SERVICE ARRAY. DON'T TRANSLATE. PAIRED WITH 'MenuArray' ends-->
+  <!--ARRAYS ends-->
+  <!--Events ends-->
+  
+  <!--Event begins-->
+  <string name="FullEventName">Название мероприятия</string>
+  <string name="FullEventOrganizer">Организатор мероприятия</string>
+  <string name="FullEventDate">Дата мероприятия</string>
+  <string name="FullEventAddress">Адрес мероприятия</string>
+  <string name="FullEventDateTime">Дата и время мероприятия</string>
+  <string name="FullEventDescription">Полное описание мероприятия</string>
+  <string name="defaultAddress">Адрес не указан</string>
+  <string name="Illgo">Я пойду</string>
+  <string name="IllgoSecond">Открыть мероприятие в Календаре</string>
+  <string name="InYourPlansAdded">В ваши планы добавлено мероприятие: </string>
+  <!--Event ends-->
+  
+  <!--Filtration begins-->
+  <string name="FiltrationUpHeader">Фильтрация</string>
+  <string name="FilterCategory">По категориям</string>
+  <string name="FilterOrganizer">По организатору</string>
+  <string name="FilterDate">По дате события</string>
+  <string name="FilterTimeAdd">По дате добавления</string>
+
+  <string name="FilterControl">Управление фильтрами</string>
+  <string name="Filter_prompt">Фильтр</string>
+  <string name="Filter_chosen">Выбран фильтр</string>
+  <string-array name="Filter_array">
+    <item>I</item>
+    <item>II</item>
+    <item>III</item>
+    <item>IV</item>
+    <item>V</item>
+  </string-array>
+  <string name="First_filter">Первый фильтр</string>
+  <string name="Second_filter">Второй фильтр</string>
+  <string name="Third_filter">Третий фильтр</string>
+  <string name="Fourth_filter">Четвертый фильтр</string>
+  <string name="Fifth_filter">Пятый фильтр</string>
+
+  <!--Categories stuff-->
+  <string name="CategoryName">Название категории</string>
+  <string name="Unknown_category">Неизвестно имя категории</string>
+  <string name="All_categories">Все категории</string>
+  <!--Filtration ends-->
+
+  <!--Profile begins-->
+  <string name="FIO">ФИО</string>
+  <string name="Email">Электронная почта</string>
+  <string name="Password">Пароль</string>
+  <string name="Gender">Пол</string>
+  <string name="Group">Группа пользователей</string>
+  <string name="GroupHint">ваша группа</string>
+  <string name="Unit">Факультет</string>
+  <string name="UnitHint">ваш факультет</string>
+  <string name="SecretAnswer">Восстановить пароль можно ответив на секретный вопрос</string>
+  <string name="SecretAnswerHint">ваш секретный ответ</string>
+  <string name="RefreshProfile">Обновить ваши данные</string>
+  <string name="ProfileSaved">Профиль обновлен</string>
+  <!--GROUPD-->
+    <string name="SFEDU_students">Студенты ЮФУ</string>
+  <!--Profile begins--> <string name="UnitHint">ваш факультет</string>
+  
+  <!-- Settings begins-->
+  <string name="SaveSettings">Сохранить</string>
+  <string name="Current_city">Ваш город</string>
+  <string name="How_many_cities">Узнавать о событиях в других городах?</string>
+  <string name="Only_my_city">Нет, мне интересны события только в моем городе</string>
+  <string name="Other_cities_region">Да, хочу знать о событиях в других городах</string>
+  <string name="SettingsSavedOld">Настройки обновлены!\nОбновить еще раз?</string>
+  <string name="SettingsSaved">Настройки обновлены</string>
+  <!-- Settings ends-->
+  
+  <!--General begins-->
+  <!--General begins-->
+
+  <!--Cities begins-->
+  <string name="Cities_prompt">Выберите ваш город</string>
+  <string name="City_chosen">Выбран город</string>
+  <string-array name="Cities_array">
+    <item>Ростов-на-Дону</item>
+    <item>Таганрог</item>
+  </string-array>
+  <string name="Rostov_on_Don">Ростов-на-Дону</string>
+  <string name="Taganrog">Таганрог</string>
+  <!--Cities begins-->
+  
+  <!--Russian version ends-->
+  
+  
+  <!-- Calendar begins-->
+  <string name="library_name">MonoDroid.TimesSquare</string>
+  <string name="day_name_format">ddd</string>
+  <string name="invalid_date">Date must be between {0} and {1}.</string>
+  <string name="month_name_format">MMMM yyyy</string>
+  <string name="full_date_format"></string>
+  <!-- Calendar ends-->
+</resources>

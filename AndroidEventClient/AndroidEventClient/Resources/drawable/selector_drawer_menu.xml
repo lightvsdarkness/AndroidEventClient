@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:state_selected="true" android:drawable="@drawable/nd_custom_background_pressed" />
+  <item android:state_pressed="true" android:drawable="@drawable/nd_custom_background_pressed" />
+  <item android:state_focused="true" android:drawable="@drawable/nd_custom_background_pressed" />
+  <item android:state_activated="true" android:drawable="@drawable/nd_custom_background_pressed"></item>
+  <item android:state_enabled="true" android:drawable="@android:color/transparent" />
+</selector>
+
+
+
+<!--
+
+android:state_enabled="true"
+
+  <item android:state_enabled="true" android:drawable="@android:color/transparent" />
+  <item android:state_enabled="true" android:state_selected="true" android:drawable="@drawable/nd_custom_background_pressed" />
+
+
+
+
+<item android:state_pressed="true" android:drawable="@drawable/nd_custom_background_pressed" />
+
+<item android:drawable="@drawable/nd_custom_background" android:state_activated="false"/>
+<item android:drawable="@drawable/nd_custom_background_pressed" android:state_pressed="true"/>
+<item android:state_enabled="true" android:state_focused="true" android:drawable="@color/gold" />
+  -->

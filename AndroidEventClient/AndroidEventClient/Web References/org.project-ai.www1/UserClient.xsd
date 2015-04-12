@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/EventService.DTO" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EventService.DTO" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://www.project-ai.org/EventService/UserClient.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://www.project-ai.org/EventService/UserClient.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Captcha">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Answer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Data" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Captcha" nillable="true" type="tns:Captcha" />
+  <xs:complexType name="ESException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsError" type="xs:boolean" />
+      <xs:element minOccurs="0" name="NeedLogin" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ESException" nillable="true" type="tns:ESException" />
+  <xs:complexType name="ArrayOfCategoryShort">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CategoryShort" nillable="true" type="tns:CategoryShort" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCategoryShort" nillable="true" type="tns:ArrayOfCategoryShort" />
+  <xs:complexType name="CategoryShort">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ChildrenCount" type="xs:int" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Level" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentId" type="xs:long" />
+      <xs:element minOccurs="0" name="PrimaryPhotoId" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="RootId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CategoryShort" nillable="true" type="tns:CategoryShort" />
+  <xs:complexType name="AccountPut">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Alias" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Avatar" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="EMail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Login" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AccountPut" nillable="true" type="tns:AccountPut" />
+  <xs:complexType name="ArrayOfEventShort">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EventShort" nillable="true" type="tns:EventShort" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEventShort" nillable="true" type="tns:ArrayOfEventShort" />
+  <xs:complexType name="EventShort">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrganizerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimaryPhotoId" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="PublicationDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EventShort" nillable="true" type="tns:EventShort" />
+  <xs:complexType name="EventFullGet">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Addresses" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Categories" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Cost" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Duration" type="ser:duration" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Organizers" nillable="true" type="q3:ArrayOfstring" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PhotoIds" nillable="true" type="q4:ArrayOflong" />
+      <xs:element minOccurs="0" name="PrimaryPhotoId" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="PublicationDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EventFullGet" nillable="true" type="tns:EventFullGet" />
+  <xs:complexType name="Photo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Data" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Photo" nillable="true" type="tns:Photo" />
+  <xs:complexType name="ArrayOfFilterShort">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FilterShort" nillable="true" type="tns:FilterShort" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFilterShort" nillable="true" type="tns:ArrayOfFilterShort" />
+  <xs:complexType name="FilterShort">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhotoId" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FilterShort" nillable="true" type="tns:FilterShort" />
+  <xs:complexType name="FilterFullGet">
+    <xs:sequence>
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CategoryIds" nillable="true" type="q5:ArrayOflong" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhotoId" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FilterFullGet" nillable="true" type="tns:FilterFullGet" />
+  <xs:complexType name="FilterFullPut">
+    <xs:sequence>
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CategoryIds" nillable="true" type="q6:ArrayOflong" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Photo" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FilterFullPut" nillable="true" type="tns:FilterFullPut" />
+</xs:schema>

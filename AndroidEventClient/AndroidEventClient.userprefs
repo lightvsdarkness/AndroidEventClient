@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="AndroidEventClient\AndroidEventClient.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AndroidEventClient\Resources\Values\Strings.xml">
+    <Files>
+      <File FileName="AndroidEventClient\Resources\Values\Strings.xml" Line="23" Column="23" />
+      <File FileName="AndroidEventClient\Resources\values\Colors.xml" Line="1" Column="1" />
+      <File FileName="AndroidEventClient\InterfaceParts\FlyOutContainer.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AndroidEventClient MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" AndroidDeviceId-Debug="20080411413fc082" AndroidDeviceId-Release="20080411413fc082" />
+</Properties>

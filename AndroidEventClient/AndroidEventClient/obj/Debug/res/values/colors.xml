@@ -1,0 +1,13 @@
+<resources><color name="transparent">#00000000</color><color name="cellback">#FFDAFF7F</color><color name="black">#000000</color><color name="grey">#333333</color><color name="light_grey">#bbbbbb</color><color name="white">#ffffff</color><color name="yellow">#FFD800</color><color name="red">#ff0000</color><color name="dark_red">#FF7F3300</color><color name="dark_dark_red">#400000</color><color name="listseparator">#2A3748</color><color name="gold">#ffD4AF36</color><color name="metallic_gold">#ffD4AF37</color><color name="dark_metallic_gold">#ffc7a22b</color><color name="metallic_gold50">#80D4AF37</color><color name="metallic_gold75">#BFD4AF37</color><color name="metallic_gold85">#D9D4AF37</color><color name="metallic_gold90">#E6D4AF37</color><color name="golden_yellow">#ffFFDF00</color><color name="golden">#ffFFD700</color><color name="my_gray">#ffaaaaaa</color><color name="my_gray35">#59aaaaaa</color><color name="my_gray65">#A6aaaaaa</color><color name="my_gray80">#CCaaaaaa</color><color name="my_gray85">#D9aaaaaa</color><color name="my_gray90">#E6aaaaaa</color><color name="my_light_gray">#ffeeeeec</color><color name="my_light_gray35">#59eeeeec</color><color name="my_light_gray65">#A6eeeeec</color><color name="my_light_gray80">#CCeeeeec</color><color name="my_light_gray85">#D9eeeeec</color><color name="my_light_gray90">#E6eeeeec</color><color name="dark_purple">#ff150029</color><color name="dark_purple50">#80150029</color><color name="green">#ff005000</color><color name="green50">#80005000</color><color name="dark_green">#ff003c00</color><color name="very_dark_green">#ff002300</color><!-- Calendar begins
+  <color name="calendar_active_month_bg">#fff5f7f9</color>
+  <color name="calendar_bg">#ffffffff</color>
+  <color name="calendar_divider">#ffbababa</color>
+  <color name="calendar_inactive_month_bg">#ffd7d9db</color>
+  <color name="calendar_selected_day_bg">#ff379bff</color>
+  <color name="calendar_highlighted_day_bg">#ccffcc</color>
+  <color name="calendar_selected_range_bg">#ff96caff</color>
+  <color name="calendar_text_inactive">#40778088</color>
+  <color name="calendar_text_active">#ff778088</color>
+  <color name="calendar_text_selected">#ffffffff</color>
+  <color name="calendar_text_unselectable">#7f778088</color>
+Calendar ends--></resources>

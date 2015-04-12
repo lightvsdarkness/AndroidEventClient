@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{264F3BC6-E278-4436-B99B-41290C1D54DF}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AEC</RootNamespace>
+    <AssemblyName>AndroidEventClient</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <JavaMaximumHeapSize />
+    <JavaOptions />
+    <TargetFrameworkVersion>
+    </TargetFrameworkVersion>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidLinkSkip>
+    </AndroidLinkSkip>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\Libs\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\Libs\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AECApplication.cs" />
+    <Compile Include="BroadcastReceivers.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Service\Cache\IndexedList.cs" />
+    <Compile Include="Service\Cache\EventFullCache.cs" />
+    <Compile Include="Service\Cache\PhotoCache.cs" />
+    <Compile Include="Service\Cache\SingleCacheBase.cs" />
+    <Compile Include="Service\DataAdapter.cs" />
+    <Compile Include="DrawerAct.cs" />
+    <Compile Include="Fragments\CalendarFragment.cs" />
+    <Compile Include="Fragments\FiltrCategoriesListFrag.cs" />
+    <Compile Include="Fragments\FiltrationFragment.cs" />
+    <Compile Include="Fragments\SettingsFragment.cs" />
+    <Compile Include="Service\DataService%28Inet%29.cs" />
+    <Compile Include="Service\DataService%28Interface%29.cs" />
+    <Compile Include="Service\DataService%28DB%29.cs" />
+    <Compile Include="Service\DataService.cs" />
+    <Compile Include="Service\ServiceConnection.cs" />
+    <Compile Include="Service\ServiceLauncher.cs" />
+    <Compile Include="Service\UserAccess.cs" />
+    <Compile Include="Service\ServiceScheduling.cs" />
+    <Compile Include="Service\UserAccessClient.cs" />
+    <Compile Include="Service\WorkingInetAndSQL.cs" />
+    <Compile Include="Service\WorkingInetInteractDB.cs" />
+    <Compile Include="Service\WorkingWithAccount.cs" />
+    <Compile Include="SplashscreenAct.cs" />
+    <Compile Include="External cs\ForeignKeyAttribute.cs" />
+    <Compile Include="External cs\SQLiteAsync.cs" />
+    <Compile Include="Fragments\MyEventsFragment.cs" />
+    <Compile Include="Fragments\EventsListFragment.cs" />
+    <Compile Include="Fragments\ProfileFragment.cs" />
+    <Compile Include="InterfaceParts\FlyOutContainer.cs" />
+    <Compile Include="MainMenuAct.cs" />
+    <Compile Include="InterfaceParts\DrawerActionBarDrawerToggle.cs" />
+    <Compile Include="EventFullAct.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="External cs\SqliteNet.cs" />
+    <Compile Include="JavaLang.cs" />
+    <Compile Include="DrawerSlidingPaneLayoutAct.cs" />
+    <Compile Include="AccCantAccessAct.cs" />
+    <Compile Include="AccRegisterAct.cs" />
+    <Compile Include="AccLogInAct.cs">
+      <DeployService-Deploy>True</DeployService-Deploy>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\events.sqlite">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assets\profile.sqlite">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assets\chosenstuff.sqlite">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\AccRegister.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Profile.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Events.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\MenuLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ContentLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\MainOld.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\EventsList.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\AutoCompleteTextView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\SlidingPaneLayout.axml" />
+    <AndroidResource Include="Resources\layout\DrawerListItem.axml" />
+    <AndroidResource Include="Resources\layout\MainDrawer.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\EventFullDescription.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Splashscreen.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Settings.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Calendar.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout-land\EventFullDescription.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout-large\Main.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Filtration.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\FiltrationMenuLayout.axml" />
+    <AndroidResource Include="Resources\layout\FiltrationContentLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\CategoriesList.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\dimensions.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout-land\AccLogIn.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\AccLogIn.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\AccCantAccess.axml" />
+    <AndroidResource Include="Resources\drawable\iconelse.png" />
+    <AndroidResource Include="Resources\drawable\icon1.png" />
+    <AndroidResource Include="Resources\layout-land\EventsList.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\drawer_shadow_dark.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\drawer_shadow_light.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_drawer_dark.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_drawer_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\action_search.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\drawer_shadow_dark.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\drawer_shadow_light.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_drawer_dark.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_drawer_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\drawer_shadow_dark.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\drawer_shadow_light.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_drawer_dark.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_drawer_light.png" />
+    <AndroidResource Include="Resources\menu\OneEvent.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\canvas_2.png" />
+    <AndroidResource Include="Resources\drawable\splashscreenImage.png" />
+    <AndroidResource Include="Resources\drawable\action_other.png" />
+    <AndroidResource Include="Resources\drawable\action_search.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\action_login.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\action_overflow.png" />
+    <Content Include="Resources\drawable-hdpi\action_settings.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\action_web.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\action_search.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\action_settings.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\action_web.png" />
+    <AndroidResource Include="Resources\drawable\action_filter.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\action_login.png" />
+    <AndroidResource Include="Resources\drawable\action_login.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\action_filter.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\action_sort.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\action_sort.png" />
+    <Content Include="Resources\drawable\action_settings.png" />
+    <AndroidResource Include="Resources\drawable\action_web.png" />
+    <AndroidResource Include="Resources\drawable\selector_drawer_menu.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\nd_custom_background_pressed.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\action_sort.png" />
+    <AndroidResource Include="Resources\drawable\roundrect.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\sort_organizer.png" />
+    <AndroidResource Include="Resources\drawable\sort_alphabet.png" />
+    <AndroidResource Include="Resources\drawable\sort_date.png" />
+    <AndroidResource Include="Resources\drawable\action_overflow.png" />
+    <AndroidResource Include="Resources\drawable\service_itstime.png" />
+    <AndroidResource Include="Resources\drawable\selector_category_check.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\unchecked.png" />
+    <AndroidResource Include="Resources\drawable\checked.png" />
+    <AndroidResource Include="Resources\drawable\noimage.png" />
+    <AndroidResource Include="Resources\drawable\logo.png" />
+    <EmbeddedResource Include="assets\WordList.txt" />
+    <Content Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <AndroidResource Include="Resources\drawable-xhdpi\action_menu.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon1.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\iconelse.png" />
+    <AndroidResource Include="Resources\drawable\action_menu.png" />
+    <AndroidResource Include="Resources\drawable\selector_custom.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\colors.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\Leo.png" />
+    <AndroidResource Include="Resources\drawable\button_normal.9.png" />
+    <AndroidResource Include="Resources\menu\ActionBarMain.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\styles.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <ProjectReference Include="..\MonoDroid.TimesSquare\MonoDroid.TimesSquare.csproj">
+      <Project>{48288ec0-cd15-414e-9f72-7e97ecab92a6}</Project>
+      <Name>MonoDroid.TimesSquare</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Service\Calendar\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

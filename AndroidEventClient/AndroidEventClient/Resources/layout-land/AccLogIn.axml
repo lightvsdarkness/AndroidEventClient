@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:background="#D4AF37"
+        android:layout_height="fill_parent">
+        <EditText
+            android:id="@+id/EmailEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/EmailEdit"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:layout_marginBottom="5dip"
+            android:layout_gravity="bottom"
+            android:layout_above="@+id/PasswordEditText" />
+        <EditText
+            android:id="@+id/PasswordEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/PasswordEdit"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:layout_marginBottom="15dip"
+            android:layout_gravity="bottom"
+            android:layout_above="@+id/SignInButton" />
+        <Button
+            android:id="@+id/SignInButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/SignIn"
+            android:layout_marginBottom="1dip"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:layout_marginTop="1dip"
+            android:layout_gravity="bottom"
+            android:textSize="25dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true" />
+        <Button
+            android:id="@+id/SimpleUse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SimpleUse"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:layout_marginTop="5dip"
+            android:textSize="15dip"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/SignInButton" />
+        <Button
+            android:id="@+id/ForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ForgotPassword"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="50dip"
+            android:layout_marginRight="25dip"
+            android:layout_marginTop="5dip"
+            android:layout_gravity="bottom"
+            android:textSize="15dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/SimpleUse" />
+        <Button
+            android:id="@+id/RegisterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Register"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="50dip"
+            android:layout_marginTop="5dip"
+            android:layout_gravity="bottom"
+            android:textSize="15dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/SimpleUse" />
+    </RelativeLayout>
+</LinearLayout>

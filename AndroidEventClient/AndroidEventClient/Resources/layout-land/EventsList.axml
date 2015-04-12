@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+    <ImageView
+        android:id="@+id/ImageEvent"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:padding="1dip"
+        android:src="@drawable/Leo"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+    <RelativeLayout
+        android:id="@+id/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ImageEvent"
+        android:paddingLeft="8dip">
+        <TextView
+            android:id="@+id/TextEventName"
+            android:text="@string/FullEventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF7F3300"
+            android:textSize="20dip"
+            android:textStyle="italic"
+            android:layout_marginTop="1dip"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="1dip"
+            android:layout_marginBottom="3dip"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/ImageCategory" />
+        <TextView
+            android:id="@+id/FullEventDate"
+            android:text="@string/FullEventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dip"
+            android:textColor="#FF267F00"
+            android:layout_marginTop="1dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="1dip"
+            android:layout_marginBottom="1dip"
+            android:paddingLeft="1dip"
+            android:layout_margin="1dip"
+            android:layout_below="@+id/TextEventName" />
+        <TextView
+            android:id="@+id/TextOrganizer"
+            android:text="@string/FullEventOrganizer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dip"
+            android:textColor="#FF267F00"
+            android:paddingLeft="1dip"
+            android:layout_marginTop="1dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginBottom="1dip"
+            android:layout_below="@+id/TextEventName"
+            android:layout_toRightOf="@+id/FullEventDate" />
+        <ImageView
+            android:id="@+id/ImageCategory"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:padding="1dip"
+            android:src="@drawable/Icon"
+            android:layout_alignParentRight="true"
+            android:layout_weight="5" />
+    </RelativeLayout>
+</RelativeLayout>

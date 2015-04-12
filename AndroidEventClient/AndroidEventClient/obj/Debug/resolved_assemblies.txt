@@ -1,0 +1,4 @@
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\AndroidEventClient\bin\Debug\AndroidEventClient.dll
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\MonoDroid.TimesSquare\bin\Debug\MonoDroid.TimesSquare.dll
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\Libs\Xamarin.Android.Support.v4.dll
+D:\!MatSubsys\Program Files\!SVNCheckout\Client\Android\AndroidEventClient\Libs\Xamarin.Android.Support.v7.AppCompat.dll

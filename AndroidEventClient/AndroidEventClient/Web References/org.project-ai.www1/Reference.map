@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://www.project-ai.org/EventService/UserClient.svc?wsdl" filename="UserClientExchange.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://www.project-ai.org/EventService/UserClient.svc?disco" filename="UserClient.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://www.project-ai.org/EventService/UserClient.svc?xsd=xsd2" filename="UserClient.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://www.project-ai.org/EventService/UserClient.svc?xsd=xsd3" filename="UserClient0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://www.project-ai.org/EventService/UserClient.svc?xsd=xsd0" filename="UserClient1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://www.project-ai.org/EventService/UserClient.svc?xsd=xsd1" filename="UserClient2.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

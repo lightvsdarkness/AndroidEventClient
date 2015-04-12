@@ -1,0 +1,38 @@
+<resources><style name="Theme.PATheme.NoTitle" parent="@android:style/Theme.Holo.Light.NoActionBar"></style><style name="Theme.PATTheme.FullScreen" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"></style><!-- MAIN --><style name="Theme.PATheme" parent="@style/Theme.AppCompat.Light"><item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item><!-- Text appearance --><item name="android:textAppearanceLarge">@style/TextAppearance.Large</item><item name="android:textAppearanceMedium">@style/TextAppearance.Medium</item><item name="android:textAppearanceSmall">@style/TextAppearance.Small</item><!--
+    <item name="textAppearance">@style/TextAppearance</item>
+    <item name="textAppearanceInverse">@style/TextAppearance.Inverse</item>
+    --></style><!-- JUST SPLASHSCREEN --><style name="Theme.PAThemeSplash" parent="@style/Theme.PATheme"><item name="android:windowNoTitle">true</item><item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item><item name="android:windowBackground">@android:color/transparent</item><item name="android:windowContentOverlay">@null</item><item name="android:windowIsFloating">true</item><item name="android:windowFrame">@null</item></style><!-- More transparent stuff
+  <item name="android:windowIsTranslucent">true</item>
+  <item name="android:backgroundDimEnabled">false</item>
+  --><!-- EXACT STYLES --><!-- Action Bar --><style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow"><item name="android:src">@drawable/action_overflow</item></style><!-- Text appearances --><style name="TextAppearance" parent="android:Theme.Holo.Light"></style><style name="TextAppearance.Large"><item name="android:textSize">22sp</item>?android:attr/textColorTertiary
+    <item name="android:textStyle">bold</item><item name="android:textColor">?android:attr/textColorTertiary</item></style><style name="TextAppearance.Medium"><item name="android:textSize">18sp</item><item name="android:textStyle">normal</item><item name="android:textColor">?android:attr/textColorSecondary</item></style><style name="TextAppearance.Small"><item name="android:textSize">15sp</item><item name="android:textStyle">normal</item></style><!-- Calendar begins
+  <style name="CalendarTitle">
+    <item name="android:textSize">@dimen/calendar_text_medium</item>
+    <item name="android:textColor">@color/calendar_text_active</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="CalendarCell">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textAlignment">center</item>
+  </style>
+
+  <style name="CalendarCell.DayHeader">
+    <item name="android:textColor">@color/calendar_text_active</item>
+    <item name="android:textSize">@dimen/calendar_text_small</item>
+  </style>
+
+  <style name="CalendarCell.CalendarDate">
+    <item name="android:textSize">@dimen/calendar_text_medium</item>
+    <item name="android:background">@drawable/calendar_bg_selector</item>
+    <item name="android:textColor">@color/calendar_text_selector</item>
+    <item name="android:clickable">true</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+  Calendar ends--></resources><!--
+xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:AndroidEventClient="http://schemas.android.com/apk/res-auto"
+           <item name="android:windowNoTitle">true</item>
+             -->

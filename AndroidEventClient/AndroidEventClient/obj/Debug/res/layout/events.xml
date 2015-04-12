@@ -1,0 +1,29 @@
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:padding="3dip" xmlns:android="http://schemas.android.com/apk/res/android"><!--
+    <Button  
+      android:id="@+id/OrderDateTime"
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content" 
+      android:text="@string/OrderDateTime"
+      android:layout_alignParentTop="true"
+      android:layout_centerInParent="true"
+      android:layout_gravity="center_horizontal"
+    />
+    <Button
+      android:id="@+id/Refresh"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/Refresh"
+      android:layout_alignParentTop="true"
+      android:gravity="left|center_vertical"
+      android:layout_toLeftOf="@+id/OrderDateTime"
+      android:drawableLeft="@drawable/Refresh"
+    />
+  <Button
+  android:id="@+id/Qu"
+  android:layout_width="0dip"
+  android:layout_height="0dip"
+  android:text=""
+  android:layout_below="@+id/Refresh"
+  />
+  --><ListView android:id="@+id/FoundedEventsList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#FFDAFF7F" android:listSelector="@color/gold" /><!--android:layout_below="@+id/Refresh"--><!--android:layout_alignParentTop="true"
+android:listSelector="#11FFFF"--></RelativeLayout>
